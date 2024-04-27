@@ -1,0 +1,20 @@
+###
+
+# curl -X GET --location "http://localhost/"
+GET http://localhost:8080/
+
+###
+
+###
+
+PUT http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "username": "user",
+  "email": "user@email.com",
+  "password": "password"
+}
+
+###
