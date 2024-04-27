@@ -1,0 +1,22 @@
+# Spring Configuration
+spring:
+  application:
+    name: docker-start
+  profiles:
+    active: prod
+  mvc:
+    servlet:
+      load-on-startup: 1
+
+# Server Configuration
+server:
+  port: 8080
+#  servlet:
+#    context-path: /api/v1
+
+
+
+
+
+
+
