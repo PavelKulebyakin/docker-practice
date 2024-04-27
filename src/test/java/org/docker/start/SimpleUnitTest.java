@@ -19,7 +19,7 @@ public class SimpleUnitTest {
     }
 
     @Test
-    public void testDoNotPass() {
-        assertThat(calculatorService.sum(3, 4)).isEqualTo(5);
+    public void testNowPass() {
+        assertThat(calculatorService.sum(3, 2)).isEqualTo(5);
     }
 }
