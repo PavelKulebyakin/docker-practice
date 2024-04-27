@@ -24,4 +24,4 @@ jobs:
       - name: Test with JUnit
         env:
           SPRING_PROFILES_ACTIVE: test
-        run: ./gradlew test --info
+        run: ./gradlew test
