@@ -3,7 +3,7 @@ spring:
   application:
     name: docker-start
   profiles:
-    active: prod
+    active: test
   mvc:
     servlet:
       load-on-startup: 1

@@ -17,4 +17,9 @@ public class SimpleUnitTest {
     public void testSum() {
         assertThat(calculatorService.sum(3, 4)).isEqualTo(7);
     }
+
+    @Test
+    public void testDoNotPass() {
+        assertThat(calculatorService.sum(3, 4)).isEqualTo(5);
+    }
 }
