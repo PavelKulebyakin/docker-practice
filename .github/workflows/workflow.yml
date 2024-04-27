@@ -1,8 +1,6 @@
 name: Project Build
 
 on:
-  push:
-    branches: [ "master", "main" ]
   pull_request:
     branches: [ "master", "main" ]
 
@@ -26,4 +24,4 @@ jobs:
       - name: Test with JUnit
         env:
           SPRING_PROFILES_ACTIVE: test
-        run: ./gradlew test
+        run: ./gradlew test --info
