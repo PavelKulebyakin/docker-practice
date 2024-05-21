@@ -1,5 +1,6 @@
 package org.docker.start.service;
 
+import lombok.RequiredArgsConstructor;
 import org.docker.start.entity.UserEntity;
 import org.docker.start.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,14 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
     private final UserRepository userRepository;
-
-    @Autowired
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
 
     public List<UserEntity> getUsers() {
         return userRepository.findAll();

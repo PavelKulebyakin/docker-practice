@@ -1,5 +1,6 @@
 package org.docker.start.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.docker.start.entity.UserEntity;
 import org.docker.start.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,15 +11,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/user")
 public class UserController {
 
     private final UserService userService;
-
-    @Autowired
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
 
     @GetMapping
     public ResponseEntity<UserEntity> getUser(@RequestParam Long id) {
